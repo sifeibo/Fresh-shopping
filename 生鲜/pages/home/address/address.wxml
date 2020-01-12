@@ -1,0 +1,62 @@
+<!--pages/home/address/address.wxml-->
+<view class='container'>
+  <!-- 搜索框 -->
+  <view class='search'>
+    <view class='district' bindtap='clickdist'>
+      {{district ||'请选择'}}
+      <image src='../../../images/icon/down.png'></image>
+    </view>
+    <view class="searchWrap {{tag2==false?'active':''}}">
+      <icon class='iconS' type='search' color='#0cc032' size='12'></icon>
+      <input value='{{searchKey}}' type='text' focus='true' confirm-type='search' bindconfirm='search'
+       placeholder='请输入地址' class='searchInput'></input>
+    </view>
+    <view class='cancle' hidden='{{tag2}}' bindtap='cancle'>取消</view>
+  </view>
+  <!-- 搜索框end -->
+
+  <!-- poi列表 -->
+  <view class='poiview'>
+    <view class='poiview-top'>
+      附近地址
+      <view class='poiview-reset' bindtap='clickreset'>
+        <image src='../../../images/icon/reset.png'></image>
+        重新定位
+      </view>
+    </view>
+    <view class='poi-view' wx:for="{{poi}}" wx:key="" >
+      <view class='poi-item' data-title="{{item.title}}" data-address='{{item.address}}' data-district='{{item.ad_info.city}}' bindtap='choosedistrict'>
+        {{item.title}}
+      </view>
+    </view>
+  </view>
+  <!-- poi列表end -->
+
+  <!-- 已经供货的城市 -->
+  <view class='tag1' hidden='{{tag1}}' bindtap='clicktag'>
+    <view class='tag1-top'>
+      以下是已开通的城市
+    </view>
+    <view class='poi-view' wx:for="{{citys}}" wx:key="" >
+      <view class='poi-item'>
+        {{item}}
+      </view>
+    </view>
+    <view class='tag1-footer'>
+    更多城市正在努力开通中，敬请期待。。。
+    </view>
+  </view>
+  <!-- 已经供货的城市end -->
+
+  <!-- 查询到的地点 -->
+  <view class='tag2' hidden='{{tag2}}'>
+    <view class='tag2-view' wx:for="{{search}}" wx:key="" data-district='{{item.ad_info.city}}' data-address='{{item.address}}' data-title="{{item.title}}" bindtap='clicksearchaddress'>
+      <image mode='widthFix' src='../../../images/icon/dingwei.png'></image>
+      <view class='tag2-item'  >
+        <text class='t1'>{{item.title}}</text>
+        <text class='t2'>{{item.address}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- 查询到的地点end -->
+</view>

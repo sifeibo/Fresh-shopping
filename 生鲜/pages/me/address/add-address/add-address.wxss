@@ -1,0 +1,98 @@
+/* pages/me/address/add-address/add-address.wxss */
+page {  
+  display: block;  
+  min-height: 100%;  
+  background-color:#f6f6f6;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color:#353535;
+  position: relative;
+} 
+.info{
+  background-color: #fff;
+}
+.item{
+  height:90rpx;
+  align-items: center;
+  display:flex;
+  margin-left:30rpx;
+  border-bottom:1rpx solid #eee;
+}
+
+input placeholder{
+  color:red;
+}
+.area{
+  width:150rpx;
+  border:1rpx solid #939393;
+}
+.remind{
+  padding-top: 6rpx;
+  color:#e64340;
+  font-size:20rpx;
+}
+
+.right{
+  margin-left: 50rpx;
+  width:75%;
+  display:flex;
+}
+.right1{
+  height: 100%;
+  margin-left: 50rpx;
+  width:85%;
+  position: relative;
+}
+.right1 text{
+  position: absolute;
+  left: 0;
+  top: 25rpx;
+}
+.right1 input{
+  position: absolute;
+  left: 0;
+  top: 20rpx;
+  width: 80%;
+}
+.right1 image{
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  right: 20rpx;
+  top: 25rpx;
+}
+input{
+  width:100%; 
+}
+
+/* 保存 */
+.save{
+  width:90%;
+  margin-top:30rpx;
+  margin-left: 5%;
+  height: 80rpx;
+  background-color: rgb(4, 199, 69);
+  position: relative;
+}
+.savebt{
+  background: none;
+  border: none;
+  position: absolute;
+  top: 0rpx;
+  width:100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  color:#fff;
+  font-size: 28rpx;
+}
+.delete{
+  width:90%;
+  margin-top:30rpx;
+  margin-left: 5%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background-color: rgb(236, 21, 5);
+  color:#fff;
+}

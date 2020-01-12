@@ -1,0 +1,74 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/order/order",
+    "pages/me/me",
+    "pages/shoppingcart/shoppingcart",
+    "pages/list/list",
+    "pages/home/search/search",
+    "pages/home/address/address",
+    "pages/me/youhui/youhui",
+    "pages/me/invite/invite",
+    "pages/me/fuzeren/fuzeren",
+    "pages/shoppingcart/pay/pay",
+    "pages/me/address/address",
+    "pages/me/setting/setting",
+    "pages/me/address/add-address/add-address",
+    "pages/list/list-detail/list-detail",
+    "pages/everyday/everyday",
+    "pages/order/orderdetail/orderdetail",
+    "pages/order/assess/assess",
+    "pages/everyday/cook/cook"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "为了便于为您定位城市"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "selectedColor": "black",
+    "color": "#999",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "images/icon/home.png",
+        "selectedIconPath": "images/icon/home-select.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "iconPath": "images/icon/list.png",
+        "selectedIconPath": "images/icon/list-select.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/everyday/everyday",
+        "iconPath": "images/icon/list.png",
+        "selectedIconPath": "images/icon/list-select.png",
+        "text": "吃点啥"
+      },
+      {
+        "pagePath": "pages/shoppingcart/shoppingcart",
+        "iconPath": "images/icon/car.png",
+        "selectedIconPath": "images/icon/car-select.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "images/icon/me.png",
+        "selectedIconPath": "images/icon/me-select.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,61 @@
+/* pages/me/fuzeren/fuzeren.wxss */
+page{
+display: flex; 
+flex-direction: column; 
+height: 100%; 
+background: #eee;
+}
+/* 整体 */
+.total{
+  width: 96%;
+  background: #fff;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  margin-left: 2%;
+}
+/* 每一栏信息 */
+.label{
+  width: 95%;
+  height: 80rpx;
+  line-height: 80rpx;
+  align-items: center;
+  display: flex;
+  border-bottom: 2rpx solid #ddd;
+  margin-left: 2.5%;
+  position: relative;
+  color: #f00;
+}
+.txt{
+  color: #000;
+  font-size: 35rpx;
+  width: 180rpx;
+}
+.input{
+  font-size: 30rpx;
+  color: #000;
+  margin-left: 5rpx;
+}
+/* 图片框 */
+.pic{
+margin-top: 50rpx;
+text-align: center;
+font-size: 35rpx;
+}
+.photo{
+  width: 80%;
+  height: 300rpx;
+  border: 2rpx dashed #ddd;
+  margin-left: 10%;
+  margin-top: 30rpx;
+}
+.btn{
+  color: #fff;
+  background: #0c0;
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 80%;
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+  border-radius: 35rpx;
+  font-size: 35rpx;
+}

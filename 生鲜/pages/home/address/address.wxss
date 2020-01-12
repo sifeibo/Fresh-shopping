@@ -1,0 +1,150 @@
+/* pages/home/address/address.wxss */
+.container {
+  background: #f2f2f2;
+  padding-top: 88rpx;
+}
+
+/* 搜索框 */
+.search {
+  background: #fff;
+  position: fixed;
+  z-index: 4;
+  width: 100%;
+  height: 88rpx;
+  top:0;
+  left: 0;
+  display: flex;
+  
+}
+.district{
+  margin-left:40rpx; 
+  font-size: 30rpx;
+  line-height: 82rpx;
+  display: flex;
+}
+.district image{
+  margin-top:24rpx; 
+  width: 40rpx;
+  height: 40rpx;
+}
+.searchWrap {
+  width: 70%;
+  height: 54rpx;
+  margin: 15rpx 20rpx;
+  background: #f2f2f2;
+  border-radius: 28rpx;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+}
+.iconS{
+  margin-top:15rpx; 
+}
+.searchInput{
+  display: inline-block;
+  margin-left: 20rpx;
+  width: calc(100% - 50rpx);
+  height: 54rpx;
+  font-size: 24rpx;
+  vertical-align: middle;
+  margin-bottom:10rpx; 
+}
+.active{
+  width: 60%;
+}
+.cancle{
+  font-size: 24rpx;
+  color: #777676;
+  line-height: 82rpx;
+}
+
+/* poi列表 */
+.poiview{
+  width: 100%;
+}
+.poiview-top{
+  width: 100%;
+  font-size: 28rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx; 
+  display: flex;
+  justify-content: space-between
+}
+.poiview-top .poiview-reset{
+  color: #0cc032;
+  margin-right: 30rpx; 
+  display: flex;
+}
+.poiview-reset image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx; 
+}
+.poi-item{
+  padding-left: 30rpx; 
+  background: white;
+  color: #777676;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx; 
+  border-bottom:1px solid  #f2f2f2;
+}
+
+/*已经供货的城市*/
+.tag1{
+  position: fixed;
+  top: 88rpx;
+  left: 0;
+  background: #f2f2f2;
+  width:100%;
+  height: 100%;
+  z-index: 4;
+}
+.tag1-top{
+  padding-left: 30rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx; 
+  font-size: 28rpx; 
+  color: #777676;
+}
+.tag1-footer{
+  margin-top: 30rpx;
+  text-align: center;
+  color: #777676;
+  font-size: 28rpx; 
+}
+
+/* 查询列表 */
+.tag2{
+  position: absolute;
+  top: 88rpx;
+  left: 0;
+  background: #f2f2f2;
+  width:100%;
+  z-index: 4;
+}
+.tag2-view{
+  height: 140rpx;
+  display: flex;
+  background: white;
+}
+.tag2-view image{
+  width: 45rpx;
+  height: 45rpx;
+  margin: 15rpx;
+}
+.tag2-item{
+  margin-left: 20rpx;
+  display: flex;
+  flex-flow: column; 
+
+}
+.tag2-item .t1{
+  font-size: 28rpx; 
+  color: black;
+}
+.tag2-item .t2{
+  font-size: 25rpx; 
+  color: #777676;
+}
+

@@ -1,0 +1,19 @@
+<!--pages/me/address/address.wxml-->
+<view class='container'>
+  <view class = "item" wx:for="{{list}}" wx:key="" wx:for-index="index" data-address='{{item.address}}{{item.door_card}}' data-name='{{item.name}}' data-phone='{{item.phone}}' data-id='{{item.address_id}}' bindtap='select'>
+
+    <text class='address'>{{item.address}}{{item.door_card}}</text>
+    <text class='name' >{{item.name}}</text>
+    <text class='tel'>{{item.phone}}</text>
+    <image class='eidt' src = "../../../images/icon/modify.png" mode = "widthFix" data-index='{{index}}' bindtap = "edit"/>
+
+  </view>
+
+</view>
+
+
+<view class = "add" bindtap = "addAddre">
+	<image  class = "left" src = "../../../images/icon/add.png" mode = "widthFix" />
+  <view class = "text">新增个人地址</view>
+  <image class="right" src = "../../../images/icon/right.png" mode = "widthFix" />
+</view>

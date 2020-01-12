@@ -1,0 +1,55 @@
+<!--pages/shoppingcart/shoppingcart.wxml--> 
+<view class='container1'>
+  <!--  列表不为空 -->
+  <view wx:if="{{list!=null}}">
+      <!-- 列表 -->
+      <view class="list" wx:for="{{list}}" wx:key="{{index}}">
+        <!-- radio选择IOCN -->
+        <image  wx:if="{{item.selected}}"  data-index="{{index}}" class="radio_chek" bindtap="selectList" src='../../images/icon/select-yes.png'></image>
+        <image wx:else src='../../images/icon/select.png'  class="radio_chek" data-index="{{index}}" bindtap="selectList"></image>
+        <!-- 列表标题 -->
+        <text class="list_name">{{item.name}}</text>
+        <!-- 列表商品图片 -->
+        <image class="list_img" src="{{item.image}}"></image>
+        <!-- 规格 -->
+        <text class="cart_g_name">规格 : {{item.danwei}}</text>
+        <!-- 价格 -->
+        <text class="list_price">￥{{item.price}}</text>
+        <!-- 商品数量加减  style='display:{{show_edit}}'-->
+        <view >
+          <view class="carts-num">
+            <!--减按钮  -->
+            <lable class="minus" bindtap="btn_minus" data-obj="{{obj}}" data-index="{{index}}">-</lable>
+            <!-- 文本框值 -->
+            <label class="view_text_center"  bindinput='input_num' data-index="{{index}}">{{item.num}}</label>
+            <!-- 加按钮-->
+            <lable class="plus" bindtap="btn_add" data-index="{{index}}">+</lable>
+          </view>
+        </view>
+    </view>
+  </view>
+
+  <!--  列表为空 -->
+  <view wx:else>
+    <view class="list_none">购物车是空的哦~</view>
+  </view>
+</view>
+
+
+<!-- 待支付 -->
+<view class='pay'>
+  <view class='last' bindtap='cilckall'>
+    <!-- <view class='yuan' wx:if="{{selectAllStatus}}" ></view>
+    <icon class='yuan1' type='success' size='18' color='#1FC93B' wx:else></icon> -->
+    <image class='yuan' wx:if="{{selectAllStatus}}" src='../../images/icon/select-yes.png'></image>
+    <image class='yuan' wx:else src='../../images/icon/select.png'></image>
+      全选
+    </view>
+    <view class='waitpay'>
+      <view class='price'>
+        <text>合计：</text>
+        <text class='sumprice'>￥{{totalPrice}}</text>
+        </view>
+    <view class='spend' bindtap='payFor'>立即结算</view>
+  </view>
+</view>

@@ -1,0 +1,179 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.4",
+	"appid": "wx6e97e68fa6ce5e02",
+	"projectname": "%E7%94%9F%E9%B2%9C",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 18,
+			"list": [
+				{
+					"id": -1,
+					"name": "home",
+					"pathName": "pages/home/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "me",
+					"pathName": "pages/me/me",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "地址",
+					"pathName": "pages/home/address/address",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "分类",
+					"pathName": "pages/list/list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "搜索",
+					"pathName": "pages/home/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单生成",
+					"pathName": "pages/shoppingcart/pay/pay",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "申请负责人",
+					"pathName": "pages/me/fuzeren/fuzeren",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "优惠卷",
+					"pathName": "pages/me/youhui/youhui",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "购物车",
+					"pathName": "pages/shoppingcart/shoppingcart",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "地址管理",
+					"pathName": "pages/home/address/address",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "地址管理",
+					"pathName": "pages/me/address/address",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "添加修改地址",
+					"pathName": "pages/me/address/add-address/add-address",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "列表详情",
+					"pathName": "pages/list/list-detail/list-detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单",
+					"pathName": "pages/order/order",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单详情",
+					"pathName": "pages/order/orderdetail/orderdetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "评价",
+					"pathName": "pages/order/assess/assess",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "待支付",
+					"pathName": "pages/order/orderdetail/orderdetail",
+					"query": "state=\"待支付\"",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "每日菜单",
+					"pathName": "pages/everyday/everyday",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "cook",
+					"pathName": "pages/everyday/cook/cook",
+					"scene": null
+				}
+			]
+		}
+	}
+}

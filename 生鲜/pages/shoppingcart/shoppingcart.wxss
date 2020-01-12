@@ -1,0 +1,170 @@
+/* pages/shoppingcart/shoppingcart.wxss */
+/* 支付功能 */
+.pay{
+    height: 100rpx;
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    bottom: 0px;
+    border: 2rpx solid #eee;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  .last{
+    display: flex;
+    line-height: 100rpx;
+    font-size: 28rpx;
+    color: #999;
+    align-items: center; 
+    justify-content: center;
+  }
+  .waitpay{
+    width: 450rpx;
+    font-size: 30rpx;
+    line-height: 100rpx;
+    margin-left: 35rpx;
+    display: flex;
+    justify-content: space-between
+  }
+  .sumprice{
+    
+    font-size: 28rpx;
+    color: rgb(255, 115, 0);
+  }
+  .price{
+    display: flex;
+    margin-right: 50rpx;
+  }
+  /* 立即支付 */
+  .spend{
+    width: 200rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    font-size: 30rpx;
+    background: rgb(31, 201, 59);
+    color: #fff;
+  }
+  .yuan{
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 15rpx;
+    margin-left: 15rpx;
+  }
+
+  /* 购物车为空 */
+.list_none{
+  padding:40rpx 0;
+  color: #999;
+  text-align: center;
+}
+
+/* 商品列表 */
+.container1{
+  padding-bottom: 100rpx;
+}
+
+/* 列表 */
+.list{
+  background: white;
+  position: relative;
+  width: 100%;
+  height: 185rpx;
+  /* background-color: red; */
+  border-bottom: 1rpx solid #e9e9e9;
+}
+
+/* 单选状态 */
+.radio_chek{
+    position: absolute;
+    left: 30rpx;
+    top: 70rpx;
+    width: 40rpx;
+    height: 40rpx;
+}
+/* 列表商品图片 */
+.list_img{
+    position: absolute;
+    top: 20rpx;
+    left: 100rpx;
+    width: 144rpx;
+    height: 144rpx;
+}
+/* 列表规格 */
+.cart_g_name{
+  position: absolute;
+  left: 280rpx;
+  font-size: 26rpx;
+  color: #aaa;
+  top: 75rpx;
+  width: 300rpx;
+  overflow: hidden;    
+  text-overflow:ellipsis;    
+  white-space: nowrap;
+}
+/* 收藏 */
+.collert{
+  position: absolute;
+  font-size: 28rpx;
+  right: 40rpx;
+  top: 30rpx;
+}
+/* 列表商品名称 */
+.list_name{
+  position: absolute;
+  left: 280rpx;
+  top: 30rpx;
+  width: 300rpx;
+  /* background-color: red; */
+  font-size: 30rpx;
+  overflow: hidden;    
+  text-overflow:ellipsis;    
+  white-space: nowrap;
+}
+/* 列表商品价格 */
+ .list_price{
+position: absolute;
+font-size: 32rpx;
+color:  #D66058;
+left: 280rpx;
+bottom: 20rpx;
+}
+ 
+
+/*数量加减*/
+.carts-num{
+  position: absolute;
+  right: 30rpx;
+  bottom: 23rpx;
+  /* background-color: red; */
+  display: flex; 
+  align-items: center;
+  text-align: center;
+  height: 50rpx;}
+
+.view_text_center{
+  border: 1rpx solid #ebebeb;
+  font-size: 30rpx;  
+  display: inline-block;
+  color: #333;
+  height: 50rpx;
+  line-height: 50rpx;
+  width: 76rpx;
+}
+.carts-num .minus, .carts-num .plus{
+  margin: 10rpx;
+  border: 1rpx solid #ebebeb;
+  color: #000;
+  text-align: center;
+  height: 50rpx;
+  line-height: 50rpx;
+  width: 40rpx;
+}
+.carts-num .minus{
+  font-size: 34rpx;
+}
+/* .carts-num .minus.disabled{color: red;} */
+.carts-num .plus{
+  font-size: 34rpx;
+}

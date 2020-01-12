@@ -1,0 +1,39 @@
+<!--pages/everyday/cook/cook.wxml-->
+<view class='container'>
+  <!-- 轮播图 -->
+  <!-- <view class='Swiper'>
+    <swiper indicator-dots='true' autoplay="true" interval="{{3000}}" duration="{{500}}">
+      <block wx:for="{{imgUrls}}" wx:key=''>
+        <swiper-item>
+            <image src="{{item}}" class="slide-image"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view> -->
+  <image src="{{list.image}}" class="slide-image"/>
+  <!-- 商品详情 -->
+  <!-- <view class='goods-detail'>
+    <text class='name'>{{list.name}}\t\t{{list.danwei}}</text>
+    <text class='jieshao'>{{list.jieshao}}</text>
+    <text class='price'>￥{{list.price}}</text>
+  </view> -->
+
+ <!-- 商品规格 -->
+  <view class='goods-guige'>
+    <text class='guige'>制作步骤</text>
+    <!-- <text class='danwei'>已选:\t\t{{list.danwei}}</text> -->
+  </view>
+
+  <!-- 图片积累 -->
+  <view class='goods-images'>
+    <block wx:for="{{imgUrls}}" wx:key=''>
+      <image src="{{item}}" class="slide-image"/>
+    </block>
+  </view>
+</view>
+
+
+<!-- <view class='pay'>
+  <view class='spend' bindtap='addtocart'>加入购物车</view>
+</view> -->
+

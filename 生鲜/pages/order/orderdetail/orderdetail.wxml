@@ -1,0 +1,80 @@
+<!--pages/orderdetail/orderdetail.wxml-->
+<view class='orderdetail-container'>
+<!-- 支付信息 -->
+  <view class='menuinfo'>
+    <view class='payinfo'>支付信息</view>
+    <view class='orderlist'>
+      <view class='orderlist-order' wx:for="{{orderlist}}">
+        <view>{{item.vegetable_varieties_name}}{{item.vegetable_varieties_unit}}<text class='ordernum'>x{{item.count}}</text></view>
+        <view class='fuhao'>￥<text class='orderprice'>{{item.vegetable_varieties_price}}</text></view>
+      </view>
+    </view>
+    <view class='order-peisongfei'>配送费
+      <text class='order-psf'>￥2</text>
+    </view>
+    <view class='orderbenefit'>
+      <view class='benefit'>
+        <text class='benefit-txt1'>减</text>
+        <text class='benefit-txt2'>满减优惠</text>
+      </view>
+      <view class='cutmoney'>-￥{{coupon}}</view>
+    </view>
+    <view class='benefitsum'>
+      <!-- <view class='benefitsum1'>已优惠<text class='benefitsum1-price'>￥2</text></view> -->
+      <view class='benefitsum2'>合计<text class='benefitsum2-price'>￥{{all_total}}</text></view>
+    </view>
+  </view>
+
+  <!-- 配送信息 -->
+  <view class='sendinfo'>
+    <view class='peisonginfo'>配送信息</view>
+    <!-- <view class='service'>
+      <text class='service-txt1'>配送服务</text>
+      <text class='service-txt2'>理工快送</text>
+    </view>
+    <view class='service'>
+      <text class='service-txt1'>配送骑手</text>
+      <text class='service-txt2'>张梦</text>
+    </view> -->
+    <view class='service'>
+      <text class='service-txt1'>预计送达时间</text>
+      <text class='service-txt2'>{{estimate}}</text>
+    </view>
+    <view class='peisongaddress'>
+      <text class='service-txt1'>配送地址</text>
+      <text class='service-txt2' decode="{{true}}">{{name}}\t\t{{phone}}</text>
+      <text class='service-txt3' decode="{{true}}">{{address}}</text>
+    </view>
+  </view>
+ 
+  <!-- 订单信息 -->
+  <view class='orderinfo'>
+    <view class='peisonginfo'>订单信息</view>
+    <view class='service'>
+      <text class='service-txt1'>订单号码</text>
+      <text class='service-txt2'>{{id}}</text>
+    </view>
+    <view class='service'>
+      <text class='service-txt1'>下单时间</text>
+      <text class='service-txt2'>{{order_time}}</text>
+    </view>
+    <view class='service'>
+      <text class='service-txt1'>支付方式</text>
+      <text class='service-txt2'>在线支付</text>
+    </view>
+  </view>
+
+  <!-- 事件按钮 -->
+  <view wx:if='{{orderstate == "待支付"}}' class='box'>
+    <view class='statebtn' bindtap='functionbtn' data-current='0'>立即支付</view>
+  </view>
+  <view  wx:if='{{orderstate == "待收货"}}' class='box'>
+    <view class='statebtn' bindtap='functionbtn' data-current='1'>确认收货</view>
+  </view>
+  <view wx:if='{{orderstate == "待评价"}}' class='box'>
+    <view class='statebtn' bindtap='functionbtn' data-current='2'>立即评价</view>
+  </view>
+  <!-- <view wx:if='{{orderstate == "已完成"}}' class='box'>
+    <view class='statebtn' bindtap='functionbtn' data-current='3'>申请售后</view>
+  </view> -->
+</view>

@@ -1,0 +1,85 @@
+<!--pages/list/list.wxml-->
+<view class='container'>
+  <!-- 搜索框 -->
+  <view class='search'>
+    <view class="searchWrap" bindtap='search'>
+      <icon class='iconS' type='search' color='#0cc032' size='12'></icon>
+      <text class='searchInput'>搜索店内商品</text>
+    </view>
+  </view>
+  <!-- 搜索框end -->
+ 
+  <!-- list菜单 -->
+  <view class='list'>
+    <!-- list-left左边菜单 -->
+    <scroll-view class='list-left' scroll-into-view="{{id}}"  scroll-y='true' scroll-with-animation='true' style='height:{{winHeight-44}}px'>
+      <view wx:for="{{leftcategory}}" wx:key="" data-id="{{item.id}}" data-index="{{index}}" data-name='{{item.name}}' bindtap="switchTab" class="cate-list {{curIndex === index?'on':''}}">
+        <view  id="{{item.id}}">
+          <view class="cate-list-item">{{item.name}}</view>
+        </view>
+      </view>
+    </scroll-view>
+    <!-- list-left左边菜单end -->
+
+    <!-- list-right右边菜单 -->
+    <view class='list-right' style='height:{{winHeight-44}}px'>
+      <!-- list-right右上下拉菜单 -->
+      <view class='list-right-top'>
+        <scroll-view class='scroll-x' scroll-x="true" scroll-into-view="{{id1}}" scroll-with-animation='true'>
+          <view wx:for="{{rightcategory}}" wx:key="" data-id="{{item.vegetables_category_varname}}" data-index="{{index}}" bindtap="switchTab1" class="cate-list1 {{curIndex1 === index?'on':''}}">
+          <view id="{{item.vegetables_category_varname}}">
+            <view class="cate-list1-item" bindtap='click' data-id='{{item.vegetables_category_varname}}'>{{item.vegetables_category_name}}</view>
+            </view>
+          </view>
+        </scroll-view>
+        <image src='../../images/icon/down.png' bindtap='clickdown'></image>
+      </view>
+      <!-- list-right右上下拉菜单end -->
+
+      <!-- 下拉菜单 -->
+      <view class='tag' hidden='{{tag}}'>
+        <view class="popup-mask" bindtap='clicktag'></view>
+         <view  class="popup-contents">
+            <view wx:for="{{rightcategory}}" wx:key="" data-id="{{item.vegetables_category_varname}}" data-index="{{index}}" bindtap="switchTab2">
+            <view class="down-list-item {{curIndex1 === index?'on':''}}" bindtap='click' data-id='{{item.vegetables_category_varname}}'>{{item.vegetables_category_name}}</view>
+            </view>
+         </view>
+      </view>
+      <!-- 下拉菜单end -->
+
+      <!-- list-right右下拉菜单 -->
+      <view class='list-right-bottom'>
+        <scroll-view class='right-navbar2' scroll-y scroll-into-view="{{id}}" scroll-with-animation='true' style='height:{{winHeight-79}}px'>
+          <block wx:for="{{rightitem}}" wx:for-index="key" wx:for-item="value" wx:key="">
+            <view id="{{key}}" >
+              <!-- 标签名 -->
+              <view class='class-name'>
+                <text>{{dic[key]}}</text>
+              </view>
+              <!-- 这类的商品 -->
+              <view wx:for="{{value}}"  wx:key="" class='goods' data-id='{{item.vegetable_varieties_id}}' data-name='{{item.vegetable_varieties_name}}' data-image='{{item.vegetable_varieties_img}}' data-price='{{item.vegetable_varieties_price}}' data-danwei='{{item.vegetable_varieties_unit}}' data-jieshao='{{item.vegetable_varieties_describe}} ' data-class='{{key}}' bindtap='intodetail'>
+                <image class="img1" src='{{item.vegetable_varieties_img}}'></image>
+                <view class='goods-detail'>
+                  <view class='goods-name'>{{item.vegetable_varieties_name}}</view>
+                  <view class='goods-jieshao'>{{item.vegetable_varieties_describe}}</view>
+                  <view class='goods-price'>
+                    <view class='price'>
+                    ￥{{item.vegetable_varieties_price}}
+                      <text class='danwei'>/{{item.vegetable_varieties_unit}}</text>
+                    </view>
+                    <!-- <image class='add' src='../../../images/icon/add.png'></image> -->
+                    <image  class='jiahao' src='../../images/icon/add.png' data-name='{{item.vegetable_varieties_name}}' data-image='{{item.vegetable_varieties_img}}' data-price='{{item.vegetable_varieties_price}}' data-danwei='{{item.vegetable_varieties_unit}}' catchtap='clickgoods'></image>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </block>
+        </scroll-view>
+      </view>
+      <!-- list-right右下拉菜单end -->
+    </view>
+    <!-- list-right右边菜单end -->
+
+  </view>
+  <!-- list菜单end -->
+</view>

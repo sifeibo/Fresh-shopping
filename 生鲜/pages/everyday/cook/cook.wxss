@@ -1,0 +1,106 @@
+/* pages/everyday/cook/cook.wxss */
+.container{
+  padding-bottom: 100rpx;
+}
+/* 轮播图 */
+.Swiper{
+  width: 100%;
+}
+.Swiper swiper{
+  width: 100%;
+  height: 600rpx;
+}
+.Swiper image{
+  width: 100%;
+  height: 600rpx;
+}
+
+.slide-image{
+  width: 100%;
+  height: 400rpx;
+}
+
+/* 商品信息 */
+.goods-detail{
+  width: 100%;
+  height: 200rpx;
+  position: relative;
+  font-size: 28rpx;
+  background: white;
+}
+.goods-detail .name{
+  position: absolute;
+  left: 30rpx;
+  top: 20rpx;
+  font-size: 36rpx;
+  font-weight: bold
+}
+.goods-detail .jieshao{
+  position: absolute;
+  left: 30rpx;
+  top: 75rpx;
+  font-size: 28rpx;
+  color: rgb(134, 134, 134);
+  width: 80%;
+  overflow: hidden;    
+  text-overflow:ellipsis;    
+  white-space: nowrap;
+}
+.goods-detail .price{
+  position: absolute;
+  left: 30rpx;
+  top: 130rpx;
+  font-size: 35rpx;
+  color: rgb(255, 102, 0)
+}
+
+/* 规格 */
+.goods-guige{
+  margin-top: 20rpx;
+  width: 100%;
+  height: 100rpx;
+  background: white;
+  position: relative;
+}
+.goods-guige .guige{
+  position: absolute;
+  font-size: 28rpx;
+  top: 30rpx;
+  left: 30rpx;
+  color: rgb(134, 134, 134);
+}
+.goods-guige .danwei{
+  position: absolute;
+  font-size: 28rpx;
+  top: 30rpx;
+  left: 150rpx;
+}
+
+/* 图片累积 */
+.goods-images{
+  margin-top: 20rpx;
+  width: 100%;
+}
+.goods-images image{
+  width: 100%;
+  height: 400rpx;
+}
+
+/* 固定加入购物车 */
+.pay{
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  background-color:white; 
+}
+.spend{
+  float: right;
+  width: 35%;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: white;
+  font-size: 30rpx;
+  text-align: center;
+  background: rgb(16, 207, 16)
+}

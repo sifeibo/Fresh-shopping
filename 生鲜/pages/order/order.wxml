@@ -1,0 +1,134 @@
+<!--pages/orders/orders.wxml-->
+<view class='total'>
+  <!-- 我的订单导航条 -->
+  <view class='swiper-tab'>
+    <view wx:for="{{list}}" data-index="{{index}}" class="swiper-tab-item {{currentTap==index ?'active':''}}" wx:key="unique" bindtap='clickTap'>
+    <view class='name'>{{item}}</view>
+    </view>
+  </view>
+  <swiper current="{{currentTap}}" duration="300" bindchange="swiperTap" >
+   <!-- 待支付 -->
+    <swiper-item>
+      <scroll-view scroll-x="false" scroll-y="true" class='scroll-views' style='height:100%;'>
+        <view class='order' wx:for="{{list1}}" wx:key='' data-time='{{item.order_time}}' data-alltotal='{{item.all_total}}'  data-id='{{item.order_id}}' data-state='{{item.order_status}}' data-estimate='{{item.estimated_time}}' data-goods_total='{{item.goods_total}}'  data-address='{{item.address+item.door_card}}'  data-name='{{item.name}}' data-phone='{{item.phone}}' data-coupon='{{item.coupon}}' data-shoping_fee='{{item.shoping_fee}}' bindtap='orderDetail' >
+          <view class='header'>
+            <view class='header-order'>
+            <image class='orderimg' src='../../images/icon/order.png'></image>
+            <text>订单状态</text>
+            </view>
+            <view class='orderstate'>{{item.order_status}}</view>
+          </view>
+          <view class='orderdate'>
+            <view class='makeorderTime'>下单时间：{{item.order_time}}
+              <text class='detail'>详情></text>
+            </view>
+            <view class='totalprice'>总价：
+              <text class='jiage'>￥</text>
+              <text class='totalprice-price'>{{item.all_total}}</text>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+
+
+    <!-- 待收货 -->
+    <swiper-item>
+      <scroll-view scroll-x="false" scroll-y="true" class='scroll-views' style='height:100%;'>
+        <view class='order' wx:for="{{list2}}" wx:key='' data-time='{{item.order_time}}' data-alltotal='{{item.all_total}}'  data-id='{{item.order_id}}' data-state='{{item.order_status}}' data-estimate='{{item.estimated_time}}' data-goods_total='{{item.goods_total}}'  data-address='{{item.address+item.door_card}}'  data-name='{{item.name}}' data-phone='{{item.phone}}' data-coupon='{{item.coupon}}' data-shoping_fee='{{item.shoping_fee}}' bindtap='orderDetail' >
+          <view class='header'>
+            <view class='header-order'>
+            <image class='orderimg' src='../../images/icon/order.png'></image>
+            <text>订单状态</text>
+            </view>
+            <view class='orderstate'>{{item.order_status}}</view>
+          </view>
+          <view class='orderdate'>
+            <view class='makeorderTime'>下单时间：{{item.order_time}}
+              <text class='detail'>详情></text>
+            </view>
+            <view class='totalprice'>总价：
+              <text class='jiage'>￥</text>
+              <text class='totalprice-price'>{{item.all_total}}</text>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+
+
+    <!-- 待评价 -->
+    <swiper-item>
+      <scroll-view scroll-x="false" scroll-y="true" class='scroll-views' style='height:100%;'>
+        <view class='order' wx:for="{{list3}}" wx:key='' data-time='{{item.order_time}}' data-alltotal='{{item.all_total}}'  data-id='{{item.order_id}}' data-state='{{item.order_status}}' data-estimate='{{item.estimated_time}}' data-goods_total='{{item.goods_total}}'  data-address='{{item.address+item.door_card}}'  data-name='{{item.name}}' data-phone='{{item.phone}}' data-coupon='{{item.coupon}}' data-shoping_fee='{{item.shoping_fee}}' bindtap='orderDetail' >
+          <view class='header'>
+            <view class='header-order'>
+            <image class='orderimg' src='../../images/icon/order.png'></image>
+            <text>订单状态</text>
+            </view>
+            <view class='orderstate'>{{item.order_status}}</view>
+          </view>
+           <view class='orderdate'>
+            <view class='makeorderTime'>下单时间：{{item.order_time}}
+              <text class='detail'>详情></text>
+            </view>
+            <view class='totalprice'>总价：
+              <text class='jiage'>￥</text>
+              <text class='totalprice-price'>{{item.all_total}}</text>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+
+
+    <!-- 售后/退款 -->
+      <swiper-item>
+      <scroll-view scroll-x="false" scroll-y="true" class='scroll-views' style='height:100%;'>
+        <view class='order' wx:for="{{list4}}" wx:key='' data-time='{{item.order_time}}' data-alltotal='{{item.all_total}}'  data-id='{{item.order_id}}' data-state='{{item.order_status}}' data-estimate='{{item.estimated_time}}' data-goods_total='{{item.goods_total}}'  data-address='{{item.address+item.door_card}}'  data-name='{{item.name}}' data-phone='{{item.phone}}' data-coupon='{{item.coupon}}' data-shoping_fee='{{item.shoping_fee}}' bindtap='orderDetail' >
+          <view class='header'>
+            <view class='header-order'>
+            <image class='orderimg' src='../../images/icon/order.png'></image>
+            <text>订单状态</text>
+            </view>
+            <view class='orderstate'>{{item.order_status}}</view>
+          </view>
+           <view class='orderdate'>
+            <view class='makeorderTime'>下单时间：{{item.order_time}}
+              <text class='detail'>详情></text>
+            </view>
+            <view class='totalprice'>总价：
+              <text class='jiage'>￥</text>
+              <text class='totalprice-price'>{{item.all_total}}</text>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+
+
+     <!-- 全部订单 -->
+      <swiper-item>
+      <scroll-view scroll-x="false" scroll-y="true" class='scroll-views' style='height:100%;'>
+       <view class='order' wx:for="{{list_all}}" wx:key='' data-time='{{item.order_time}}' data-alltotal='{{item.all_total}}'  data-id='{{item.order_id}}' data-state='{{item.order_status}}' data-estimate='{{item.estimated_time}}' data-goods_total='{{item.goods_total}}'  data-address='{{item.address+item.door_card}}'  data-name='{{item.name}}' data-phone='{{item.phone}}' data-coupon='{{item.coupon}}' data-shoping_fee='{{item.shoping_fee}}' bindtap='orderDetail' >
+          <view class='header'>
+            <view class='header-order'>
+            <image class='orderimg' src='../../images/icon/order.png'></image>
+            <text>订单状态</text>
+            </view>
+            <view class='orderstate'>{{item.order_status}}</view>
+          </view>
+           <view class='orderdate'  >
+            <view class='makeorderTime'>下单时间：{{item.order_time}}
+              <text class='detail'>详情></text>
+            </view>
+            <view class='totalprice'>总价：
+              <text class='jiage'>￥</text>
+              <text class='totalprice-price'>{{item.all_total}}</text>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+</view>

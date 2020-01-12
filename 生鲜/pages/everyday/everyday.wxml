@@ -1,0 +1,14 @@
+<!--pages/everyday/everyday.wxml-->
+<view class='caidan'>
+  <view class='title-box'>
+    <view class='hengdian'></view>
+    <view class='title'>今日菜单</view>
+  </view>
+
+  <view class='box'>
+    <view class='box-item' wx:for="{{dish}}" data-index='{{index}}' data-image='{{item.dish_img_url}}' data-name='{{item.dish_name}}' bindtap='clickitem'>
+      <image src='{{item.dish_img_url}}'></image>
+      <text>{{item.dish_name}}</text>
+    </view>
+  </view>
+</view>

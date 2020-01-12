@@ -1,0 +1,112 @@
+<!--pages/assess/assess.wxml-->
+<view class='assessContainer'>
+  <view class='assessheader'>
+    <view class='cxname'>
+      <image  class='assessimg' src='../../../images/icon/assess.png'></image>
+      <text class='userassess'>用户评价</text>
+    </view>
+    <view class='niming' wx:if="{{niming==false}}">
+      <view class='assessicon'><icon type='success' size='30rpx' color='#ccc' bindtap='seticon' data-current="false"></icon></view>
+      <text class='niming-txt'>匿名评价</text>
+    </view>
+    <view class='niming' wx:if="{{niming==true}}">
+      <view class='assessicon'><icon type='success' size='30rpx' color='#0dd1ae' bindtap='seticon' data-current="true"></icon></view>
+      <text class='niming-txt1'>匿名评价</text>
+    </view>
+  </view>
+  <view class='assessbody'>
+  <!-- 星级评价 -->
+  <!-- 0颗星 -->
+    <view class='star' wx:if="{{star==-1}}">
+      <image class='starimg1' src='../../../images/icon/graystar.png' data-current="0"
+bindtap='setstar'></image>
+      <image class='starimg' src='../../../images/icon/graystar.png' data-current="1" bindtap='setstar'></image>
+      <image class='starimg' src='../../../images/icon/graystar.png' data-current="2" bindtap='setstar'></image>
+      <image class='starimg' src='../../../images/icon/graystar.png' data-current="3" bindtap='setstar'></image>
+      <image class='starimg' src='../../../images/icon/graystar.png' data-current="4" bindtap='setstar'></image>
+    </view>
+    <!-- 一颗星 -->
+    <view class='star' wx:if="{{star==0}}">
+      <image class='starimg1' src='../../../images/icon/yellowstar.png' data-current="0"
+bindtap='setstar'></image>
+      <image class='starimg' src='../../../images/icon/graystar.png' data-current="1"
+bindtap='setstar'></image>
+      <image class='starimg' src='../../../images/icon/graystar.png' data-current="2"
+bindtap='setstar'></image>
+      <image class='starimg' src='../../../images/icon/graystar.png' data-current="3"
+bindtap='setstar'></image>
+      <image class='starimg' src='../../../images/icon/graystar.png' data-current="4"
+bindtap='setstar'></image>
+    </view>
+    <!-- 两颗星 -->
+    <view class='star' wx:if="{{star==1}}">
+      <image class='starimg1' src='../../../images/icon/yellowstar.png' data-current="0"
+bindtap='setstar'></image>
+      <image class='starimg' src='../../../images/icon/yellowstar.png' data-current="1"
+bindtap='setstar'></image>
+      <image class='starimg' src='../../../images/icon/graystar.png' data-current="2"
+bindtap='setstar'></image>
+      <image class='starimg' src='../../../images/icon/graystar.png' data-current="3"
+bindtap='setstar'></image>
+      <image class='starimg' src='../../../images/icon/graystar.png' data-current="4"
+bindtap='setstar'></image>
+    </view>
+    <!-- 三颗星 -->
+    <view class='star' wx:if="{{star==2}}">
+      <image class='starimg1' src='../../../images/icon/yellowstar.png' data-current="0"
+bindtap='setstar'></image>
+      <image class='starimg' src='../../../images/icon/yellowstar.png' data-current="1"
+bindtap='setstar'></image>
+      <image class='starimg' src='../../../images/icon/yellowstar.png' data-current="2"
+bindtap='setstar'></image>
+      <image class='starimg' src='../../../images/icon/graystar.png' data-current="3"
+bindtap='setstar'></image>
+      <image class='starimg' src='../../../images/icon/graystar.png' data-current="4"
+bindtap='setstar'></image>
+    </view>
+    <!-- 四颗星 -->
+    <view class='star' wx:if="{{star==3}}">
+      <image class='starimg1' src='../../../images/icon/yellowstar.png' data-current="0"
+bindtap='setstar'></image>
+      <image class='starimg' src='../../../images/icon/yellowstar.png' data-current="1"
+bindtap='setstar'></image>
+      <image class='starimg' src='../../../images/icon/yellowstar.png' data-current="2"
+bindtap='setstar'></image>
+      <image class='starimg' src='../../../images/icon/yellowstar.png' data-current="3"
+bindtap='setstar'></image>
+      <image class='starimg' src='../../../images/icon/graystar.png' data-current="4"
+bindtap='setstar'></image>
+    </view>
+    <!-- 五颗星 -->
+    <view class='star' wx:if="{{star==4}}">
+      <image class='starimg1' src='../../../images/icon/yellowstar.png' data-current="0"
+bindtap='setstar'></image>
+      <image class='starimg' src='../../../images/icon/yellowstar.png' data-current="1"
+bindtap='setstar'></image>
+      <image class='starimg' src='../../../images/icon/yellowstar.png' data-current="2"
+bindtap='setstar'></image>
+      <image class='starimg' src='../../../images/icon/yellowstar.png' data-current="3"
+bindtap='setstar'></image>
+      <image class='starimg' src='../../../images/icon/yellowstar.png' data-current="4"
+bindtap='setstar'></image>
+    </view>
+    <!-- 文本框 -->
+    <view class='textarea'>
+        <textarea class='textarea-txt' bindinput="bindinput" placeholder='亲，对小店的生鲜产品和服务还满意吗？'></textarea>
+    </view>
+    <!-- 上传图片 -->
+    <!-- <view class='uploadimg'> 
+      <view class='upload'>
+        <button class='photobtn'  bindtap='uploadimg'>
+        <image class='photo' src='../../../images/icon/photo.png'></image>
+      </button>
+      </view>
+      <view class='uploadimg-txt'>上传图片</view>
+    </view> -->
+  </view>
+  <!-- 提交按钮 -->
+  <view>
+    <view class='submitbtn' bindtap='submit'>提交</view>
+  </view>
+  
+</view>

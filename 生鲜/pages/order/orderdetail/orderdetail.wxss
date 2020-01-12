@@ -1,0 +1,175 @@
+/* pages/orderdetail/orderdetail.wxss */
+page{
+  display: flex;
+  flex-direction: column;
+  background: #eee;
+}
+.orderdetail-container{
+  width: 100%;
+  background: #eee;
+    padding-bottom: 110rpx;
+}
+.menuinfo{
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 10rpx;
+  background: #fff;
+}
+.peisonginfo,.payinfo{
+  width: 96%;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  margin-left: 2%;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+.orderlist{
+  width: 96%;
+  margin-left: 2%;
+  font-size: 28rpx;
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+.orderlist-order{
+  width: 98%;
+  height: 80rpx;
+  color: #333;
+  align-items: center;
+  margin-bottom: 10rpx;
+  display: flex;
+  position: relative;
+}
+.ordernum{
+  font-size: 26rpx;
+  color: #aaa;
+  position: absolute;
+  top: 25rpx;
+  right: 200rpx;
+}
+.fuhao{
+  font-size: 20rpx;
+  color: orange;
+  position: absolute;
+  right: 20rpx;
+  align-items: center;
+}
+.orderprice{
+  font-size: 28rpx;
+}
+.order-peisongfei{
+  width: 96%;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 28rpx;
+  margin-left: 2%;
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+.order-psf{
+  position: absolute;
+  right: 20rpx;
+}
+.orderbenefit{
+  width: 96%;
+  height: 70rpx;
+  line-height: 70rpx;
+  margin-left: 2%;
+  font-size: 28rpx;
+  display: flex;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+.benefit-txt1{
+  background: #f66;
+  padding: 5rpx;
+  color: #fff;
+}
+.benefit-txt2{
+  margin-left: 10rpx;
+}
+.cutmoney{
+  color: #f66;
+  position: absolute;
+  right:20rpx;
+}
+.benefitsum{
+  width: 96%;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  position: relative;
+}
+.benefitsum1{
+  position: absolute;
+  right: 200rpx;
+}
+.benefitsum1-price{
+  color: #f66;
+}
+.benefitsum2{
+  position: absolute;
+  right: 10rpx;
+}
+.benefitsum2-price{
+   color: #f66;
+}
+.orderinfo,.sendinfo{
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 10rpx;
+  background: #fff;
+}
+.service{
+  width: 96%;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 28rpx;
+  margin-left: 2%;
+  align-items: center;
+  position: relative;
+}
+.service-txt1{
+  color: #777;
+}
+.service-txt2{
+  position: absolute;
+  right: 10rpx;
+}
+.service-txt3{
+  position: absolute;
+  top: 60rpx;
+}
+.peisongaddress{
+  width: 96%;
+  height: 200rpx;
+  line-height: 70rpx;
+  font-size: 28rpx;
+  margin-left: 2%;
+  position: relative;
+  display: flex;
+}
+
+/*底部盒子*/
+.box{
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  color: white;
+  background: white
+}
+.statebtn{
+  float: right;
+  width: 30%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 28rpx;
+  background: #0dd1ae;
+}
+.orderstate-btn{
+  
+}

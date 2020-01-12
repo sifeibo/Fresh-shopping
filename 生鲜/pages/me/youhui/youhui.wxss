@@ -1,0 +1,143 @@
+/* pages/youhuiquan/youhuiquan.wxss */
+
+page{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #eee;
+}
+.navbar{
+  flex: none;
+  display: flex;
+  background: #fff;
+  font-size: 30rpx;
+}
+.navbar .item{
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+}
+.navbar .item.active{
+  color: #0dd1ae;
+}
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: #0dd1ae
+}
+.youhui{
+  width: 95%;
+  height: 250rpx;
+  background: #fff;
+  border-radius: 15rpx;
+  margin-top: 10rpx;
+  margin-left: 2.5%;
+  position: relative;
+}
+.swiper{
+  height: 500%;
+}
+.price{
+  width: 100%;
+  height: 150rpx;
+  padding: 20rpx;
+  display: flex;
+}
+.price .p1{
+  width: 170rpx;
+  height: 150rpx;
+  border-right: 2rpx solid #ccc;
+  margin-left: 40rpx; 
+  line-height: 150rpx;
+  font-size: 30rpx;
+  color: orange;
+  position: relative;
+}
+.p1 #num{
+  font-size:45rpx;
+  color: orange;
+}
+.p1 #man{
+  font-size: 28rpx;
+  color: black;
+  position: absolute;
+  top: 50rpx;
+  left: 0rpx;
+}
+.price .p2{
+  width: 480rpx;
+  height: 150rpx;
+  font-size: 35rpx;
+  position: relative;
+}
+.descript{
+  font-size:28rpx;
+  color:#bbb;
+  border-top: 2rpx dashed #ccc;
+  margin-top: 50rpx;
+  padding-left: 20rpx;
+  align-items: center;
+}
+#use{
+  color: orange;
+  font-size: 25rpx;
+  position: absolute;
+  top: 50rpx;
+  left: 20rpx;
+}
+#time{
+  color: black;
+  font-size: 28rpx;
+  position: absolute;
+  top: 110rpx;
+  left: 20rpx;
+}
+.btn{
+  width: 120rpx;
+  height: 50rpx;
+  background: #0dd1ae;
+  border-radius: 25rpx;
+  position: absolute;
+  left: 350rpx;
+  top: 100rpx;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 50rpx;
+  color: #fff;
+}
+.btn2{
+  width: 120rpx;
+  height: 50rpx;
+  background: #ccc;
+  border-radius: 25rpx;
+  position: absolute;
+  left: 350rpx;
+  top: 100rpx;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 50rpx;
+  color: #fff;
+}
+#more{
+  width: 100%;
+  height: 80rpx;
+  text-align: center;
+  font-size: 28rpx;
+  margin-top: 50rpx;
+}
+
+.mengban{
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  width:100%;
+  height: 100%;
+  background-color: rgba(247, 245, 245, 0.5);
+  z-index: 5;
+}

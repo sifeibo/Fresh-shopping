@@ -1,0 +1,33 @@
+<!--pages/home/search/search.wxml-->
+<view class='container1'>
+  <!-- 搜索框 -->
+  <view class='search'>
+    <view class="searchWrap {{tag2==false?'active':''}}">
+      <icon class='iconS' type='search' color='#0cc032' size='12'></icon>
+      <input value='{{searchKey}}' type='text' focus='true' confirm-type='search' bindconfirm='search'
+       placeholder='搜索店内商品' class='searchInput'></input>
+    </view>
+  </view>
+  <!-- 搜索框end -->
+ 
+  <!-- 商品展示 -->
+<view class='goods' wx:for="{{list}}" wx:key="" data-id='{{item.vegetable_varieties_id}}' data-name='{{item.vegetable_varieties_name}}' data-image='{{item.vegetable_varieties_img}}' data-price='{{item.vegetable_varieties_price}}' data-danwei='{{item.vegetable_varieties_unit}}' data-jieshao='{{item.vegetable_varieties_describe}} ' data-class='{{key}}'  bindtap='intodetail'>
+  <image class='img' src='{{item.vegetable_varieties_img}}'/>
+  <text class='txt'>{{item.vegetable_varieties_name}}</text>
+  <view class='dazhe'>{{item.vegetable_varieties_describe}}</view>
+  <view class='every'><text class='price'>￥{{item.vegetable_varieties_price}}</text>/{{item.vegetable_varieties_unit}}</view>
+  <!-- <view class='add' bindtap='addtoblanket'>+ -->
+  <image class='add' src='../../../images/icon/add.png' data-name='{{item.vegetable_varieties_name}}' data-image='{{item.vegetable_varieties_img}}' data-price='{{item.vegetable_varieties_price}}' data-danwei='{{item.vegetable_varieties_unit}}' catchtap='clickgoods'></image>
+</view>
+
+<!-- 已经到底啦 -->
+<view class='bottom'>
+  <text>----已经到底啦----</text>
+</view>
+
+<!-- 购物车
+<view class='shop'>
+  <image  class='shopimg' src='../img/shop.png'></image>
+</view> -->
+
+</view>

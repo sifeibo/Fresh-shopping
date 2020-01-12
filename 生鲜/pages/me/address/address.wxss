@@ -1,0 +1,92 @@
+/* pages/me/address/address.wxss */
+page{
+  display: block;  
+  min-height: 100%;  
+  background-color:#f6f6f6;  
+  font-family: "微软雅黑";
+  font-size: 30rpx;
+  color:#353535;
+}
+.container{
+  margin-top: 20rpx;
+  padding-bottom: 110rpx;
+}
+
+/* 地址信息 */
+.item{
+  width: 100%;
+  height: 140rpx;
+  background: white;
+  position: relative;
+  border-bottom: 1rpx solid #e0e0e0;
+}
+.address{
+  position: absolute;
+  width: 80%;
+  left: 30rpx;
+  top: 20rpx;
+  font-size:28rpx;
+  line-height:36rpx;
+  display: inline-block;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow:ellipsis;
+}
+.name{
+  position: absolute;
+  left: 30rpx;
+  top: 80rpx;
+  color:#888888;
+  font-size:25rpx;
+}
+.tel{
+  position: absolute;
+  left: 150rpx;
+  top: 80rpx;
+  color:#888888;
+  font-size:25rpx;
+}
+.eidt{
+  position: absolute;
+  right: 30rpx;
+  top: 45rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+
+
+
+/* 新增地址 */
+.add{
+  width:100%;  
+  height: 106rpx;
+  background-color:#fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding:15rpx 15rpx 30rpx 40rpx;
+  border-top:1rpx solid #e0e0e0;
+}
+.add image{
+  width:40rpx;
+  height: 40rpx;
+  margin-top:15rpx;
+  margin-right:20rpx;
+}
+.add .right{
+  width:25rpx;
+  float:right;
+  margin-right:20rpx;
+  padding-top:15rpx;
+  color:#e0e0e0;
+}
+.text{
+  float:left;
+  margin-top:20rpx;
+}
+.left{
+  padding-top: 5rpx;
+  float:left;
+}
+

@@ -1,0 +1,59 @@
+<!--pages/me/fuzeren/fuzeren.wxml-->
+<view class='total'>
+  <form class='form' bindsubmit="formSubmit" report-submit="true">
+  <!-- 真实姓名 -->
+    <view class='label'>*
+      <text class='txt'>真实姓名</text>
+      <input type='text' placeholder='请填写真实姓名' class='input'></input>
+    </view>
+
+    <!-- 手机号码 -->
+    <view class='label'>*
+      <text class='txt'>手机号码</text>
+      <input type='text' placeholder='请填写常用号码' class='input'></input>
+    </view>
+
+    <!-- 邀请码 -->
+    <view class='label'>*
+      <text class='txt'>邀请码</text>
+      <input type='text' placeholder='请填写邀请码（非必填）' class='input'></input>
+    </view>
+
+    <!-- 城市区域 -->
+    <view class='label'>*
+      <text class='txt'>城市区域</text>
+      <input type='text' placeholder='江苏省，苏州市，常熟市' class='input'></input>
+    </view>
+
+    <!-- 提货地址 -->
+    <view class='label'>*
+      <text class='txt' decode='true'>提货地址</text>
+      <input type='text' placeholder='请填写您的提货地址' class='input'></input>
+    </view>
+
+    <!-- 小区名称 -->
+    <view class='label'>*
+      <text class='txt'>小区名称</text>
+      <input type='text' placeholder='请填写所在小区名称' class='input'></input>
+    </view>
+
+    <!-- 身份证号码 -->
+    <view class='label'>*
+      <text class='txt'>身份证号码</text>
+      <input type='text' placeholder='请填写您的身份证号码' class='input'></input>
+    </view>
+
+    <!-- 上传身份证件 -->
+    <view class='pic'>
+      <text>上传身份证正面</text>
+      <view class='photo'>
+      </view>
+    </view>
+    <view class='pic'>
+      <text>上传身份证反面</text>
+      <view class='photo'>
+      </view>
+    </view>
+    <button class='btn' formType="submit">申请提交</button>
+  </form>
+</view>

@@ -1,0 +1,278 @@
+/* pages/home/home.wxss */
+.container {
+  background: #f2f2f2;
+  padding-top: 88rpx;
+  padding-bottom: 20rpx;
+}
+/* 不在服务区 */
+.no-address{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  line-height: 88rpx;
+  background: rgb(245, 218, 188);
+  color: #777676;
+  text-align: center;
+  font-size: 26rpx;
+  z-index: 5;
+}
+.no-address p{
+  color: orange;
+}
+/*搜索框*/
+.searchWrap {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 88rpx;
+  padding: 12rpx 0 17rpx 40rpx;
+  background: rgba(255,255,255,1);
+  border-bottom: 1px solid #eee;
+}
+.gagalogo {
+  height: 40rpx;
+  width: 40rpx;
+  margin-bottom:10rpx; 
+}
+.search {
+  width: 508rpx;
+  height: 54rpx;
+  border-radius: 27rpx;
+  background-color: #ffffff;
+  font-size: 24rpx;
+  line-height: 4.17;
+  padding-left: 24rpx;
+  color:#000;
+  display: inline-block;
+  margin-left: 30rpx;
+  border: 1px solid #eee;
+  background: #f2f2f2;
+}
+.search-placeholder {
+  color:#999;
+}
+.icon-search {
+  transform: translateY(-16rpx);
+  margin-left: 30rpx;
+}
+
+/*轮播图*/
+.indexSwiperImg,
+.indexSwiper {
+  width: 100%;
+  height: 390rpx;
+}
+.indexSwiperImg {
+  height: auto;
+}
+
+/*图标按钮*/
+.buttonview{
+  width: 100%;
+  /* height: 400rpx; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 40rpx; 
+}
+
+.button-item{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 28rpx;
+  color:#898989;
+  margin-bottom:30rpx; 
+}
+
+.buttonview image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius:50%;
+  margin: 0 auto;
+  margin-bottom:10rpx; 
+}
+
+/* 限时抢购 */
+.qianggou{
+  margin-top:20rpx; 
+  width: 95%;
+  background: white;
+  border-radius: 25rpx;
+}
+.title-box{
+  /* border: 1rpx solid red; */
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+}
+.hengdian{
+  width: 30rpx;
+  height: 8rpx;
+  border-radius:20rpx; 
+  background: #0cc032;
+  margin-left: 30rpx;
+  margin-top: 45rpx;
+}
+.title{
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+  font-size: 38rpx;
+  color: black;
+  font-weight: 600
+}
+/* 限时抢购横向 */
+.heng-box{
+  width: 100%;
+}
+.scroll-x{
+  width: 100%;
+  height: 400rpx;
+  line-height: 50rpx;
+  white-space:nowrap;
+}
+.qianggoulist{
+  width: 250rpx;
+  display: inline-block;
+  margin-right:10rpx; 
+  background: white;
+}
+.qianggoulist-item{
+  font-size: 25rpx;
+  width: 100%;
+  height: 300rpx;
+  position: relative;
+  flex-direction: column
+}
+
+.qianggoulist-item .img{
+  width: 250rpx;
+  height: 250rpx;
+}
+.qianggoulist-item .name{
+  font-size: 30rpx;
+  position: absolute;
+  top: 250rpx;
+  left: 5rpx;
+}
+
+.qianggoulist-item .danwei{
+  font-size: 27rpx;
+  color: #898989;
+  position: absolute;
+  top: 310rpx;
+  left: 5rpx;
+}
+
+.qianggoulist-item .price{
+  font-size: 30rpx;
+  position: absolute;
+  top: 350rpx;
+  left: 0rpx;
+  color: orange
+}
+.qianggoulist-item .img1{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 350rpx;
+  left: 190rpx;
+}
+
+
+
+/* 猜你喜欢 */
+.love{
+  width: 95%;
+  background: white;
+  border-radius: 25rpx;
+  margin-top: 20rpx;
+}
+/* 商品展示 */
+.goods{
+  width: 47%;
+  height: 500rpx;
+  border: 2rpx solid #ddd;
+  margin-top: 10rpx;
+  margin-left: 2%;
+  float: left;
+  position: relative;
+  background: white;
+}
+/* 商品图片 */
+.img{
+  width: 100%;
+  height: 300rpx;
+}
+/* 商品说明 */
+.txt{
+  font-size: 30rpx;
+  margin-left: 15rpx;
+}
+/* 打折信息 */
+.dazhe{
+  padding: 5rpx;
+  font-size: 25rpx;
+  margin-left: 10rpx;
+  color: rgb(182, 182, 182);
+  margin-top: 10rpx;
+  width: 300rpx;
+  overflow: hidden;    
+  text-overflow:ellipsis;    
+  white-space: nowrap;
+}
+.every{
+  position: absolute;
+  bottom: 20rpx;
+  left: 10rpx;
+  align-items: center;
+  font-size: 25rpx;
+}
+/* 商品价格 */
+.price{
+  font-size: 35rpx;
+  color: rgb(255, 136, 0);
+}
+/* 添加购物车 */
+.add{
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 50rpx;
+  text-align: center;
+  position: absolute;
+  bottom: 20rpx;
+  right: 20rpx;
+}
+.bottom{
+  width: 100%;
+  height: 120rpx;
+  font-size: 30rpx;
+  color: #777;
+  clear: both;
+  line-height: 120rpx;
+  text-align: center;
+}
+.shop
+{
+  width: 90rpx;
+  height: 90rpx;
+  position: fixed;
+  bottom: 10rpx;
+  right: 10rpx;
+  border: 2rpx solid #ccc;
+  background: #fff;
+  border-radius: 50rpx;
+  text-align: center;
+  line-height: 90rpx;
+}
+.shopimg{
+  width: 40rpx;
+  height: 40rpx;
+  lighting-color: 50rpx;
+}
+

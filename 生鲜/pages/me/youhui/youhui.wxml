@@ -1,0 +1,58 @@
+<!--pages/me/youhui/youhui.wxml-->
+<!--导航条-->
+<view class="navbar">
+  <text wx:for="{{navbar}}"  wx:key="" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+  
+<!--未使用-->
+<view hidden="{{currentTab!==0}}">
+  <view class='youhui' wx:for="{{listno}}" wx:key="">
+    <view class='price'>
+      <view class='p1'>￥
+        <text id='num'>{{item.denomination}}</text>
+        <text id='man'>满{{item.restrict}}可用</text>
+      </view>
+      <view class='p2'>
+      【通用券】新人专享券
+        <text id='use'>限线上购物使用</text>
+        <text id='time'>有效期至{{item.valid_time}}</text>
+        <view class='btn' bindtap='useTap' data-id='{{item.coupon_id}}' data-denomination='{{item.denomination}}'>
+        去使用
+        </view>
+      </view>
+    </view>
+    <view class='descript'>
+      <text>全品类通用（不能用优惠券商品除外）</text>
+    </view>
+    <view class='mengban' hidden='{{total>item.restrict}}'>
+    </view>
+  </view>
+  <view id='more'>没有更多优惠券了~</view>
+</view>
+ 
+<!--已使用/过期-->
+<view hidden="{{currentTab!==1}}">
+  <view class='youhui' wx:for="{{listyes}}" wx:key="">
+    <view class='price'>
+    <view class='p1'>￥
+      <text id='num'>{{item.denomination}}</text>
+      <text id='man'>满{{item.restrict}}可用</text>
+    </view>
+    <view class='p2'>
+    【通用券】新人专享券
+      <text id='use'>限线上购物使用</text>
+      <text id='time'>有效期至{{item.valid_time}}</text>
+      <view class='btn2' >
+      去使用
+      </view>
+    </view>
+    </view>
+    <view class='descript'>
+      <text>全品类通用（不能用优惠券商品除外）</text>
+    </view>
+  </view>
+    <view id='more'>没有更多失效券了~</view>
+</view>
+ 
+
+

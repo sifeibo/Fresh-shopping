@@ -1,0 +1,231 @@
+/* pages/list/list.wxss */
+.container {
+  background: #f2f2f2;
+  margin-top: 88rpx;
+}
+/* 搜索框 */
+.search {
+  background: #fff;
+  position: fixed;
+  z-index: 4;
+  width: 100%;
+  height: 88rpx;
+  top:0;
+  left: 0;
+  display: flex; 
+}
+.district{
+  margin-left:40rpx; 
+  font-size: 30rpx;
+  line-height: 82rpx;
+  display: flex;
+}
+.district image{
+  margin-top:24rpx; 
+  width: 40rpx;
+  height: 40rpx;
+}
+.searchWrap {
+  width: 100%;
+  height: 54rpx;
+  margin: 15rpx 20rpx;
+  background: #f2f2f2;
+  border-radius: 28rpx;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  display: flex;
+  justify-content: center;
+}
+.searchInput{
+  margin-left: 20rpx;
+  line-height: 56rpx;
+  font-size: 24rpx;
+  vertical-align: middle;
+  color: #999999
+}
+.iconS{
+  margin-top:15rpx; 
+}
+
+/* 菜单 */
+.list{
+  width: 100%;
+  display: flex;
+}
+/* 左侧大类菜单栏 */
+.list-left{
+  width: 20%;
+  font-size:28rpx;
+  background: rgb(248, 248, 248);
+  color:#777676;
+  text-align: center;
+}
+/* .cate{
+  width: 100%;
+  height: 100rpx;
+  padding-top:12.5rpx; 
+}
+.list-left .cate-list{
+  line-height: 75rpx;
+}
+.cate-list.on{
+  color: black;
+  font-weight: bold;
+  border-left: 7rpx solid #1EE93F;
+} */
+.cate-list{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.cate-list.on{
+  color: black;
+  font-weight: bold;
+  border-left: 7rpx solid #1EE93F;
+}
+
+/* 右侧 */
+.list-right{
+  width: 80%;
+  background-color: white;
+}
+/* 右上侧 */
+.list-right-top{
+  width: 100%;
+  display: flex;
+  padding-bottom: 20rpx;
+}
+.scroll-x{
+  width: 85%;
+  height: 50rpx;
+  line-height: 50rpx;
+  white-space:nowrap;
+}
+.list-right-top image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.cate-list1{
+  display:inline-block;
+  font-size: 28rpx;
+}
+.cate-list1.on{
+  color: rgb(25, 202, 54);
+}
+.cate-list1-item{
+  width: 120rpx;
+  text-align: center;
+  margin-left:20rpx; 
+}
+
+/* 右下侧 */
+.list-right-bottom{
+  width: 100%;
+}
+
+.class-name{
+  margin-left: 20rpx; 
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 28rpx;
+  color: #999999;
+  border-bottom:1rpx solid  #eee;
+}
+
+/* 单个产品 */
+.goods{
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  border-bottom:1rpx solid  #eee;
+}
+.goods .img1{
+  width: 180rpx;
+  height: 180rpx;
+  margin-top: 8rpx;
+}
+.goods-detail{
+  margin-left:15rpx; 
+  margin-top: 20rpx;
+}
+.goods-name{
+  font-size: 30rpx;
+}
+.goods-jieshao{
+  font-size: 25rpx;
+  color: #999999;
+  display: inline-block;
+  white-space: nowrap; 
+  width: 360rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+}
+.goods-price{
+  margin-top:40rpx; 
+  display: flex;
+}
+.price{
+  width:320rpx;
+  color: red;
+}
+.danwei{
+  font-size: 25rpx;
+  color: #999999
+}
+.jiahao{ 
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 50rpx;
+  margin-bottom: 20rpx;
+}
+
+
+/* 下拉菜单 */
+.tag{
+  position: fixed;
+  top: 158rpx;
+  left: 170rpx;
+  width:100%;
+  height: 100%;
+  z-index: 4;
+}
+.popup-mask{
+  position: fixed;
+  top: 158rpx;
+  left: 170rpx;
+  width:100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+.popup-contents{
+  position: fixed;
+  top: 158rpx;
+  left: 170rpx;
+  width:80%;
+  background-color: #fff; 
+  z-index: 6;
+  font-size:35rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.down-list-item{
+  width: 170rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border: 1rpx solid #999999;
+  margin-left: 15rpx;
+  margin-bottom: 20rpx;
+  border-radius:30rpx; 
+  text-align: center;
+  font-size: 30rpx;
+}
+.down-list-item.on{
+  border: 1rpx solid #3ed311;
+  background: #d2f3c8;
+  color: #3ed311
+}

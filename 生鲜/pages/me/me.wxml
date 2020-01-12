@@ -1,0 +1,43 @@
+<!--pages/me/me.wxml-->
+<view class='container'>
+  <!-- 个人信息头部 -->
+  <view class='header'>
+    <open-data class="name" type="userNickName"></open-data>
+    <open-data class="img" type="userAvatarUrl"></open-data>
+    <text class='title'>地球人买菜都上卖菜的！</text>
+  </view>
+  <!-- 个人信息头部end-->
+
+  <!-- 中间内容 -->
+  <view class='middle'>
+    <!-- 订单 -->
+    <view class='listview1'>
+      <view class='listview-top'>
+        <text class='list-name'>我的订单</text>
+        <text class='list-more' bindtap='clickbutton2'>查看全部订单</text>
+      </view>
+      <view class='buttonview'>
+        <view class='button-item' wx:for="{{buttonList}}" data-index = "{{index}}" wx:key="" bindtap='clickbutton'>
+          <image src='{{item.img}}'></image>
+          <view>{{item.name}}</view>
+        </view>
+      </view>
+    </view>
+    <!-- 订单end -->
+
+    <!-- 服务列表 -->
+    <view class='listview'>
+      <view class='listview-top'>
+        <text class='list-name'>我的服务</text>
+      </view>
+      <view class="table">
+        <view class="td"  wx:for="{{list}}" wx:key=""  data-index = "{{index}}" bindtap='clickbutton1'>
+          <image src='{{item.img}}'></image>
+          <text class='table-name'>{{item.name}}</text>
+        </view>
+      </view>
+    </view>
+    <!-- 服务列表end -->
+  </view>
+  <!-- 中间内容end -->
+</view>

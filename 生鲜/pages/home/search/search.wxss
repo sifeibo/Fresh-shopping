@@ -1,0 +1,134 @@
+/* pages/home/search/search.wxss */
+.container1 {
+  background: #f2f2f2;
+  padding-top: 88rpx;
+}
+/* 搜索框 */
+.search {
+  background: #fff;
+  position: fixed;
+  z-index: 4;
+  width: 100%;
+  height: 88rpx;
+  top:0;
+  left: 0;
+  display: flex;
+}
+.district{
+  margin-left:40rpx; 
+  font-size: 30rpx;
+  line-height: 82rpx;
+  display: flex;
+}
+.district image{
+  margin-top:24rpx; 
+  width: 40rpx;
+  height: 40rpx;
+}
+.searchWrap {
+  width: 100%;
+  height: 54rpx;
+  margin: 15rpx 20rpx;
+  background: #f2f2f2;
+  border-radius: 28rpx;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+}
+.searchInput{
+  display: inline-block;
+  margin-left: 20rpx;
+  width: calc(100% - 50rpx);
+  line-height: 56rpx;
+  font-size: 24rpx;
+  vertical-align: middle;
+  margin-bottom:10rpx; 
+}
+.iconS{
+  margin-top:15rpx; 
+}
+
+
+/* 商品展示 */
+.goods{
+  width: 47%;
+  height: 500rpx;
+  border: 2rpx solid #ddd;
+  margin-top: 10rpx;
+  margin-left: 2%;
+  border-radius: 20rpx;
+  float: left;
+  position: relative;
+  background: white;
+}
+/* 商品图片 */
+.img{
+  width: 100%;
+  height: 300rpx;
+  border-radius: 20rpx;
+}
+/* 商品说明 */
+.txt{
+  font-size: 30rpx;
+  margin-left: 15rpx;
+}
+/* 打折信息 */
+.dazhe{
+  padding: 5rpx;
+  font-size: 25rpx;
+  margin-left: 10rpx;
+  color: rgb(182, 182, 182);
+  margin-top: 10rpx;
+  width: 300rpx;
+  overflow: hidden;    
+  text-overflow:ellipsis;    
+  white-space: nowrap;
+}
+.every{
+  position: absolute;
+  bottom: 20rpx;
+  left: 10rpx;
+  align-items: center;
+  font-size: 25rpx;
+}
+/* 商品价格 */
+.price{
+  font-size: 35rpx;
+  color: rgb(255, 136, 0);
+}
+/* 添加购物车 */
+.add{
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 50rpx;
+  text-align: center;
+  position: absolute;
+  bottom: 20rpx;
+  right: 20rpx;
+}
+.bottom{
+  width: 100%;
+  height: 120rpx;
+  font-size: 30rpx;
+  color: #777;
+  clear: both;
+  line-height: 120rpx;
+  text-align: center;
+}
+.shop
+{
+  width: 90rpx;
+  height: 90rpx;
+  position: fixed;
+  bottom: 10rpx;
+  right: 10rpx;
+  border: 2rpx solid #ccc;
+  background: #fff;
+  border-radius: 50rpx;
+  text-align: center;
+  line-height: 90rpx;
+}
+.shopimg{
+  width: 40rpx;
+  height: 40rpx;
+  lighting-color: 50rpx;
+}

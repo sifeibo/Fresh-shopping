@@ -1,0 +1,69 @@
+<!--pages/shoppingcart/pay/pay.wxml-->
+<view class='whole'>
+<!-- 选择收货地址 -->
+  <view class='row1' bindtap='selectAddress'>
+  <view class='address' wx:if="{{address}}">
+    <text class='a1'>家</text>
+    <text class='a2'>{{address.address}}</text>
+    <view class='a3'>{{address.name}}\t\t\t\t{{address.phone}}</view>
+  </view>
+    <view class='tishi' wx:else>请选择您的收货地址</view>
+    <view class='arrow3'></view>
+  </view>
+
+  <!-- 订单详情 -->
+  <view class='order'>
+    <view class='seltime'>
+    <text class='sendtime'>送达时间</text>
+      <view class='time'>
+      <picker bindchange="time" value="{{timevalue}}" range="{{timearray}}">{{time||'请选择送达时间'}}</picker>
+      <view class='arrow2'></view>
+      </view>
+    </view>
+    <view class='orderdetail'>
+      <view class='goodslist' wx:for="{{list}}" wx:key="">
+        <image class='goodsimg' src='{{item.image}}'></image>
+        <text class='goodsname'>{{item.name}}</text>
+        <text class='goodsnum'>￥{{item.price}}</text>
+        <text class='goodsprice'>x{{item.num}}</text>
+      </view>
+    </view>
+  </view>
+
+
+  <!-- 优惠券 -->
+  <view class='quan' bindtap='showBenefit'>
+    <text class='benefit'>优惠券</text>
+    <view class='b1'>
+      <text class='useyh1' wx:if="{{youhui!=0}}">-￥{{youhui}}</text>
+      <text class='useyh' wx:else>暂无优惠券可用</text>
+      <view class='arrow3'></view>
+    </view>
+  </view>
+
+<!-- 商品总额 -->
+  <view class='goodstotal'>
+     <text id='gt'>商品总额</text>
+     <text id='gt1'>￥{{total}}</text>
+  </view>
+  <view class='peisongfei'>
+     <text id='psf'>配送费</text>
+     <text id='psf1'>￥{{peisong}}</text>
+  </view>
+
+  <!-- 订单备注 -->
+  <view class='remark'>
+    <text class='orderremark'>订单备注</text>
+    <textarea class='inremark' type='text' maxlength="50"  value='{{suggest}}' bindinput="bindinput" placeholder='可输入备注，最多50字哟~'></textarea>
+  </view>
+</view>
+  <!-- 待支付 -->
+  <view class='pay'>
+        <view class='last'>
+   <view class='waitpay'>
+      <text>待支付：</text>
+      <text class='sumprice'>￥{{totalprice}}</text>
+   </view>
+        <view class='spend' bindtap='payFor'>立即支付</view>
+      </view>
+  </view>

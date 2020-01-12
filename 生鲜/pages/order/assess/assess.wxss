@@ -1,0 +1,126 @@
+/* pages/assess/assess.wxss */
+page{
+  display: flex;
+  flex-direction: column;
+  background: #eee;
+}
+.assessContainer{
+  width: 96%;
+  height: 1000rpx;
+  margin-left: 2%;
+  margin-top: 10rpx;
+  background: #fff;
+  padding-bottom: 110rpx;
+}
+.assessheader{
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+.cxname{
+  height: 60rpx;
+  margin-left: 10rpx;
+  font-size: 30rpx;
+  align-items: center;
+  display: flex;
+}
+.assessimg{
+  width: 50rpx;
+  height: 50rpx;
+}
+.userassess{
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.niming{
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 10rpx;
+}
+.assessicon{
+  height: 50rpx;
+  align-items: center;
+}
+.niming-txt{
+  margin-left: 10rpx;
+  color: #aaa;
+}
+.niming-txt1{
+  margin-left: 10rpx;
+  color: #000;
+}
+.assessbody{
+}
+.star{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 30rpx;
+  height: 80rpx;
+  align-items: center;
+}
+.starimg1{
+  width: 8%;
+  margin-left: 20%;
+  height: 40rpx;
+}
+.starimg{
+  width: 8%;
+  margin-left: 5%;
+  height: 40rpx;
+}
+.textarea{
+  width: 90%;
+  height: 200rpx;
+  margin-left: 5%;
+  margin-top: 30rpx;
+}
+.textarea-txt{
+  width: 96%;
+  padding: 10rpx;
+  height: 175rpx;
+  border: 1px solid #ccc;
+  /* background: #eee; */
+  font-size: 28rpx;
+}
+.uploadimg{
+  width: 90%;
+  height: 160rpx;
+  margin-top: 20rpx;
+  margin-left: 5%;
+  align-items: center;
+  display: flex;
+  font-size: 30rpx;
+  border-bottom: 1px solid #eee;
+}
+.photobtn{
+  width: 120rpx;
+  height: 120rpx;
+  align-items: center;
+  position: relative;
+}
+.photo{
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  top: 25rpx;
+  left: 20rpx;
+}
+.uploadimg-txt{
+  margin-left: 20rpx;
+}
+.submitbtn{
+  width: 90%;
+  margin-left:5%;
+  margin-top: 300rpx; 
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  color: white;
+  background: #0dd1ae;
+}

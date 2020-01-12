@@ -1,0 +1,49 @@
+<!--pages/me/address/add-address/add-address.wxml-->
+<!-- 信息部分开始 --> 
+<form bindsubmit="saveAddr" report-submit="true">
+<view class = "info">
+<!-- 姓名部分 -->
+<view class = "item">
+<text>姓名</text>
+<view class = "right">
+<input type="text" name = "name" placeholder="请填写收货人姓名"  value="{{list.name}}" />
+</view>
+</view>
+
+<!-- 电话部分 -->
+<view class = "item">
+<text>电话</text>
+<view class = "right">
+<input name="phone" type="number" placeholder="请填写收货手机号"  value="{{list.phone}}"/>
+</view>
+</view>
+
+
+
+<!-- 收货地址部分 -->
+<view class = "item">
+<text>地址</text>
+<view class = "right1" bindtap='cilickaddress'>
+  <text class='t1' wx:if="{{!address}}">点击选择</text>
+  <input name="address"  wx:else value="{{address}}" />
+  <image src='../../../../images/icon/right.png'></image>
+</view>
+</view>
+
+<!-- 详细地址部分 -->
+<view class = "item">
+<text>详细地址</text>
+<view class = "right">
+<input name="door_card" type="text" placeholder="例： 10栋5层502室"  value="{{list.door_card}}" />
+</view>
+</view>
+
+
+
+</view>
+<!-- 信息部分结束 -->
+<view class='save'>
+  <button class="savebt" formType="submit" hover-class="none">保存</button>
+</view>
+<view class="delete" bindtap='delete' hidden='{{tag}}'>删除</view>
+</form>

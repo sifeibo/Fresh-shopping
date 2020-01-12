@@ -1,0 +1,270 @@
+/* pages/shoppingcart/pay/pay.wxss */
+page{
+  display: flex;
+  color:#3a3636;
+  flex-direction: column;
+  background: #eee;
+}
+.whole{
+  padding-bottom:120rpx; 
+}
+.tishi{
+  width: 100%;
+  font-size: 28rpx;
+  text-align: center;
+}
+/* 选择地址 */
+.row1{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 200rpx;
+  line-height: 60rpx;
+  margin-top: 20rpx;
+  background: #fff;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrow1{
+  width: 25rpx;
+  height: 25rpx;
+  border-top: 2rpx solid #999;
+  border-right: 2rpx solid #999;
+  transform: rotate(45deg);
+  margin-right: 25rpx;
+}
+.address{
+  width: 80%;
+  margin-left: 25rpx;
+  align-items: center;
+}
+.a1{
+  font-size: 30rpx;
+  line-height: 30rpx;
+  background: #fef;
+  color: orange;
+}
+.a2{
+  margin-left: 25rpx;
+  font-size:30rpx;
+}
+.a3{
+  font-size: 28rpx;
+  color: #555;
+}
+/* 大订单 */
+.order{
+  width: 100%;
+  background: #fff;
+  margin-top: 20rpx;
+}
+/* 送达时间 */
+.seltime{
+  height: 100rpx;
+  margin-left: 25rpx;
+  display: flex;
+  border-bottom: 2rpx solid #eee;
+  align-items: center;
+  position: relative;
+}
+.sendtime{
+  font-size: 30rpx;
+}
+/* 选择送达时间 */
+.time{
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+  color: #0dd1ae;
+  position: absolute;
+  right: 25rpx;
+}
+.arrow2{
+width: 25rpx;
+height: 25rpx;
+border-top: 2rpx solid #999;
+border-right: 2rpx solid #999;
+transform: rotate(45deg);
+}
+/* 订单详情 */
+.orderdetail{
+  width: 100%;
+}
+/* 商品列表 */
+.goodslist{
+  width: 100%;
+  height: 100rpx;
+  margin-top: 2rpx;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+/* 商品图片 */
+.goodsimg{
+  width: 80rpx;
+  height: 80rpx;
+  margin-left: 25rpx;
+}
+/* 商品名称 */
+.goodsname{
+  font-size: 28rpx;
+  font-weight: border;
+  margin-left: 25rpx;
+}
+/* 商品数量 */
+.goodsnum{
+  font-size: 28rpx;
+  position: absolute;
+  right: 200rpx;
+}
+/* 商品价格 */
+.goodsprice{
+  font-size: 28rpx;
+  position: absolute;
+  right: 25rpx;
+}
+/* 优惠券 */
+.quan{
+  display: flex;      
+  width: 100%;
+  height: 100rpx;
+  background: #fff;
+  margin-top: 10rpx;
+  align-items: center;
+}
+.benefit{
+  width: 40%;
+  font-size:30rpx;
+  margin-left: 25rpx;
+}
+.b1{
+  width: 60%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.useyh{
+  font-size: 30rpx;
+  color: #999;
+  position: absolute;
+  right: 55rpx;
+}
+.useyh1{
+  font-size: 30rpx;
+  color: rgb(255, 115, 0);
+  position: absolute;
+  right: 55rpx;
+}
+.arrow3{
+width: 25rpx;
+height: 25rpx;
+border-top: 2rpx solid #999;
+border-right: 2rpx solid #999;
+transform: rotate(45deg);
+position: absolute;
+right: 25rpx;
+}
+/* 商品总额
+.totalPrice{
+  display: flex;      
+  width: 95%;
+  height: 120rpx;
+  margin-left: 2.5%;
+  background: #fff;
+  margin-top: 5rpx;
+  border-radius: 20rpx;
+} */
+.goodstotal{
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  font-size: 30rpx;
+  margin-top: 10rpx;
+  background: #fff;
+  position: relative;
+}
+.peisongfei{
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  font-size: 30rpx;
+  background: #fff;
+  align-items: center;
+  position: relative;
+}
+/* 商品总额 */
+#gt{
+  margin-left: 25rpx;
+  padding-top: 5rpx;
+}
+#gt1{
+  padding-top: 5rpx;
+  position: absolute;
+  right: 25rpx;
+}
+/* 配送费 */
+#psf{
+  margin-left: 25rpx;
+  padding-bottom: 5rpx;
+}
+#psf1{
+  padding-bottom: 5rpx;
+  position: absolute;
+  right: 25rpx;
+}
+/* 订单备注 */
+.remark{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+  font-size: 30rpx;
+  background: #fff;
+}
+.orderremark{
+  margin-left: 25rpx;
+}
+.inremark{
+  margin-left: 5%;
+  width: 90%;
+  height: 200rpx;
+  background: rgb(247, 245, 245);
+  margin-top: 15rpx;
+  margin-bottom: 15rpx; 
+}
+/* 支付功能 */
+.pay{
+  height: 100rpx;
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  bottom: 0px;
+  border: 2rpx solid #eee;
+  align-items: center;
+  }
+  .last{
+    height: 100rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+  }
+  .waitpay{
+    font-size: 30rpx;
+    margin-left: 35rpx;
+  }
+  .sumprice{
+    font-size: 28rpx;
+    color: rgb(255, 115, 0);
+  }
+  /* 立即支付 */
+  .spend{
+    width: 30%;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    font-size: 30rpx;
+    background: rgb(31, 201, 59);
+    color: #fff;
+    right: 25rpx;
+  }
